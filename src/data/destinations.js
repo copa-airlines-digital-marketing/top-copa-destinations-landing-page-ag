@@ -1,0 +1,70 @@
+export const destinations = [
+  {
+    id: 1,
+    name: "Cancún",
+    country: "México",
+    image: "5766915a-4092-4508-bf2a-7f82497d9a40",
+    categories: ["Beach & Relaxation", "Trending Destinations", "Family-Friendly"],
+    budget: "$$",
+    flightTime: "3.5h",
+    season: "Dec-Apr",
+    description: "Turquoise waters and white sand beaches await you.",
+    price: 350
+  },
+  {
+    id: 2,
+    name: "Lima",
+    country: "Perú",
+    image: "a115a68e-d61f-4b7b-a7a5-21d4328f38ee",
+    categories: ["Culture", "Nature & Adventure"],
+    budget: "$",
+    flightTime: "4h",
+    season: "May-Sep",
+    description: "The gateway to Machu Picchu and Incan history.",
+    price: 420
+  },
+  {
+    id: 3,
+    name: "Punta Cana",
+    country: "República Dominicana",
+    image: "/bc16ddb7-8dbe-4c42-b2fb-824dc54f2f4f",
+    categories: ["Beach & Relaxation", "Family-Friendly"],
+    budget: "$$",
+    flightTime: "2.5h",
+    season: "Dec-Apr",
+    description: "All-inclusive resorts and endless beaches.",
+    price: 380
+  },
+  {
+    id: 4,
+    name: "Buenos Aires",
+    country: "Argentina",
+    image: "2ffafcd4-aad6-45aa-b561-08ce8233dee0", // Placeholder
+    categories: ["Culture", "Trending Destinations"],
+    budget: "$$$",
+    flightTime: "7h",
+    season: "Mar-May",
+    description: "European flair with Latin passion.",
+    price: 600
+  },
+  {
+    id: 5,
+    name: "Costa Rica",
+    country: "Costa Rica",
+    image: "2b50d3a3-35bf-46b3-b72f-a670521f0e65",
+    categories: ["Nature & Adventure", "Family-Friendly"],
+    budget: "$$",
+    flightTime: "1.5h",
+    season: "Dec-Apr",
+    description: "Pura Vida! Rainforests, volcanoes, and wildlife.",
+    price: 250
+  }
+];
+
+export const motivationCategories = [
+  "Beach & Relaxation",
+  "Culture",
+  "Trending Destinations",
+  "Family-Friendly",
+  "Nature & Adventure"
+];
