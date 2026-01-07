@@ -19,7 +19,7 @@
 
   <div class="container mx-auto items-center">
     <!-- Replaced getTypography with standard classes: text-h2, text-center, text-primary (adapted hex #0032A0) -->
-    <h2 class="text-h2 text-center text-primary-ultradark font-heading-bold mb-24">
+    <h2 class="text-h2  font-heading text-center text-primary-ultradark font-heading-bold mb-24">
       Sé parte del lanzamiento de nuestra primera tarjeta ConnectMiles en Estados Unidos.<br /> Completa
       el siguiente formulario y sé de los primeros en utilizarla.
     </h2>

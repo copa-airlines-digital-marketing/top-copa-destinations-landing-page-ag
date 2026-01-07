@@ -4,12 +4,17 @@ export const destinations = [
     name: "Cancún",
     country: "México",
     image: "5766915a-4092-4508-bf2a-7f82497d9a40",
-    categories: ["Beach & Relaxation", "Trending Destinations", "Family-Friendly"],
+    categories: [
+      "Beach & Relaxation",
+      "Trending Destinations",
+      "Family-Friendly",
+    ],
     budget: "$$",
     flightTime: "3.5h",
     season: "Dec-Apr",
     description: "Turquoise waters and white sand beaches await you.",
-    price: 350
+    price: 350,
+    landing: "vuelos-a-cancun",
   },
   {
     id: 2,
@@ -21,7 +26,8 @@ export const destinations = [
     flightTime: "4h",
     season: "May-Sep",
     description: "The gateway to Machu Picchu and Incan history.",
-    price: 420
+    price: 420,
+    landing: "vuelos-a-lima",
   },
   {
     id: 3,
@@ -33,7 +39,8 @@ export const destinations = [
     flightTime: "2.5h",
     season: "Dec-Apr",
     description: "All-inclusive resorts and endless beaches.",
-    price: 380
+    price: 380,
+    landing: "vuelos-a-punta-cana",
   },
   {
     id: 4,
@@ -45,7 +52,8 @@ export const destinations = [
     flightTime: "7h",
     season: "Mar-May",
     description: "European flair with Latin passion.",
-    price: 600
+    price: 600,
+    landing: "vuelos-a-buenos-aires",
   },
   {
     id: 5,
@@ -57,8 +65,9 @@ export const destinations = [
     flightTime: "1.5h",
     season: "Dec-Apr",
     description: "Pura Vida! Rainforests, volcanoes, and wildlife.",
-    price: 250
-  }
+    price: 250,
+    landing: "vuelos-a-san-jose-costa-rica",
+  },
 ];
 
 export const motivationCategories = [
@@ -66,5 +75,5 @@ export const motivationCategories = [
   "Culture",
   "Trending Destinations",
   "Family-Friendly",
-  "Nature & Adventure"
+  "Nature & Adventure",
 ];
