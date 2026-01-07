@@ -59,10 +59,10 @@
 
   <DestinationGrid destinations={filteredDestinations} />
   
-  <!-- Footer Placeholer -->
+  <!-- Footer Placeholer 
   <footer class="bg-primary-ultradark text-common-white py-normal text-center mt-roomy">
     <div class="container mx-auto">
         <p class="text-sm opacity-60">© 2026 Copa Airlines. All rights reserved.</p>
     </div>
-  </footer>
+  </footer>-->
 </main>
