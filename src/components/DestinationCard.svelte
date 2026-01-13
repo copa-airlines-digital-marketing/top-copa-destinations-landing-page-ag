@@ -33,7 +33,8 @@
     <div class="mt-auto flex items-center justify-end border-t border-grey-100 pt-4">
       
       <a 
-        href={destination.landing}
+        href={"/" + destination.landing}
+        data-sveltekit-preload-data="off"
         class="button text-14/20 text-white! font-heading py-8 px-16 group-hover:bg-secondary group-hover:border-secondary"
       >
         Book Now

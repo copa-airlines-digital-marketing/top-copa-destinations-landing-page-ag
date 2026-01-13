@@ -1,10 +1,9 @@
 <script>
-  import Hero from './components/Hero.svelte';
-  import FilterBar from './components/FilterBar.svelte';
-  import DestinationGrid from './components/DestinationGrid.svelte';
-  import Footer from './components/Footer.svelte'; // Assuming I'll create this or omitting for now
-  import { destinations } from './data/destinations';
-  import './app.css';
+  import Hero from '../components/Hero.svelte';
+  import FilterBar from '../components/FilterBar.svelte';
+  import DestinationGrid from '../components/DestinationGrid.svelte';
+  import Footer from '../components/Footer.svelte'; // Assuming I'll create this or omitting for now
+  import { destinations } from '../data/destinations';
 
   let activeCategory = $state('All');
   let activeFilters = $state({});
