@@ -12,7 +12,8 @@ export const destinations = [
     budget: "$$",
     flightTime: "3.5h",
     season: "Dec-Apr",
-    description: "Turquoise waters and white sand beaches await you.",
+    description:
+      "San Juan is experiencing a surge in cultural momentum and global attention. The city blends historic streets, coastal views, and a strong music and food scene into a compact, walkable experience. A short stay delivers beaches by day and lively evenings without feeling rushed, making it ideal for travelers following where energy is building.",
     price: 350,
     landing: "vuelos-a-cancun",
   },
