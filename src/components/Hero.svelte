@@ -1,27 +1,16 @@
 <script>
-  // Hero Section - ConnectMiles Promo
 </script>
 
-<div class="container mx-auto">
-  <picture class="mx-auto block py-roomy sm:aspect-[8/8] md:aspect-[26/8] lg:aspect-[28/9]">
-    <source
-      media="(min-width: 960px)"
-      srcset="https://cm-marketing.directus.app/assets/db01d3f8-5b1c-404b-93e0-e8cbd69af1bb"
-      sizes=""
-    />
+<div class="container mx-auto pt-4">
+  <h1 class="text-h1  font-heading text-center text-primary font-heading-bold mb-24">
+    Why 2026 Is the Year to Travel Differently?s
 
-    <img
-      src="https://cm-marketing.directus.app/assets/db01d3f8-5b1c-404b-93e0-e8cbd69af1bb"
-      alt="ConnectMiles Card Promo"
-      class="h-full w-full rounded-2xl object-cover drop-shadow-lg"
-    />
-  </picture>
-
-  <div class="container mx-auto items-center">
-    <!-- Replaced getTypography with standard classes: text-h2, text-center, text-primary (adapted hex #0032A0) -->
-    <h2 class="text-h2  font-heading text-center text-primary-ultradark font-heading-bold mb-24">
-      Sé parte del lanzamiento de nuestra primera tarjeta ConnectMiles en Estados Unidos.<br /> Completa
-      el siguiente formulario y sé de los primeros en utilizarla.
-    </h2>
-  </div>
+  </h1>
+  <h2 class="text-h4  font-heading text-center  mb-24">
+    Travel trends are constantly evolving, but certain destinations consistently capture the attention of modern travelers. Currently, there's a strong pull toward cities, beaches, and nature retreats that offer excitement, activity, or simply effortless enjoyment, often fitting perfectly into getaways or as part of a longer itinerary. 
+  </h2>
+  <h2 class="text-h5  font-heading text-center  mb-24">
+     These cities range from vibrant cultural capitals to relaxed coastal spots. <br> Thanks to convenient connections throughout the Americas, reaching these destinations is made easy and efficient with Copa Airlines.
+  </h2>
+ 
 </div>
