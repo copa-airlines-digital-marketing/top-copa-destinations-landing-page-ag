@@ -3,7 +3,7 @@
 
 <div class="container mx-auto pt-4">
   <h1 class="text-h1  font-heading text-center text-primary font-heading-bold mb-24">
-    Why 2026 Is the Year to Travel Differently?s
+    Top Copa destinations 2026
 
   </h1>
   <h2 class="text-h4  font-heading text-center  mb-24">

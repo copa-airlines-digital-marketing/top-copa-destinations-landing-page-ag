@@ -37,7 +37,7 @@
     </div>
     <div class="mb-3 flex flex-wrap gap-3">
       {#each destination.categories as cat}
-        <span class="rounded-2xl bg-grey-100 px-6 py-3 text-12/16 font-body-medium text-grey-600">
+        <span class="rounded-2xl bg-grey-100 px-6 py-3 text-12/16 font-body-medium text-grey-600 ">
           {cat}
         </span>
       {/each}

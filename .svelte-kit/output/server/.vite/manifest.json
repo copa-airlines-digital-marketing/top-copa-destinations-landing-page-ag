@@ -124,7 +124,7 @@
       "_server.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BuCA2G-2.css"
+      "_app/immutable/assets/_layout.BcvEp7p9.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -134,7 +134,8 @@
     "isEntry": true,
     "imports": [
       "_false.js",
-      "_server.js"
+      "_server.js",
+      "_index-server.js"
     ]
   }
 }

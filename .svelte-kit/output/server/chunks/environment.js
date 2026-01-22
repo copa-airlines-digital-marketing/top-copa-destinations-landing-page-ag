@@ -18,7 +18,7 @@ function reset() {
 function set_assets(path) {
 	assets = initial.assets = path;
 }
-const version = "1768339476918";
+const version = "1769118666558";
 let prerendering = false;
 function set_building() {}
 function set_prerendering() {
