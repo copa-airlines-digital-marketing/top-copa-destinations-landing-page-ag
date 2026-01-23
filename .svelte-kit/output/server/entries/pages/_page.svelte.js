@@ -1,4 +1,4 @@
-import "../../chunks/index-server.js";
+import { n as tick } from "../../chunks/index-server.js";
 import "../../chunks/false.js";
 import { C as escape_html, E as noop, S as attr, n as bind_props, o as stringify, r as ensure_array_like, t as attr_class } from "../../chunks/server.js";
 function Hero($$renderer) {
@@ -6,7 +6,7 @@ function Hero($$renderer) {
 }
 function FilterBar($$renderer, $$props) {
 	$$renderer.component(($$renderer$1) => {
-		let { activeCategory = "All", activeFilters = {}, categories = [] } = $$props;
+		let { activeCategory = "All", activeFilters = {}, categories = [], getAnchorFromCategory = () => null } = $$props;
 		$$renderer$1.push(`<div class="w-full bg-common-white py-12 sm:py-16 md:py-20 lg:py-24 sticky top-0 z-50 border-b border-grey-100"><div class="flex justify-center items-center overflow-x-auto hide-scroll gap-4 sm:gap-6 md:gap-8 px-8 sm:px-12 md:px-16 lg:px-24"><button${attr_class(`rounded-full p-12 px-12 sm:px-16 md:px-20 lg:px-24 py-6 sm:py-7 md:py-8 border transition-all duration-300 font-heading-medium text-12/16 sm:text-14/20 whitespace-nowrap shrink-0 ${stringify(activeCategory === "All" ? "bg-primary text-common-white border-primary" : "bg-common-white text-grey-700 border-grey-300 hover:border-primary")}`)}>All</button> <!--[-->`);
 		const each_array = ensure_array_like(categories);
 		for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
@@ -107,6 +107,17 @@ function _page($$renderer, $$props) {
 				"Natureza e aventura": "Nature & Adventure"
 			}
 		};
+		const categoryToAnchor = {
+			"Beach & Relaxation": "pl",
+			"Culture": "cu",
+			"Trending Destinations": "tr",
+			"Family-Friendly": "fa",
+			"Nature & Adventure": "na"
+		};
+		function getAnchorFromCategory(category) {
+			if (category === "All") return null;
+			return categoryToAnchor[categoryMap[currentLang]?.[category] || category] || null;
+		}
 		let filteredDestinations = storefrontFilteredDestinations.filter((dest) => {
 			if (activeCategory !== "All") {
 				const englishCategory = categoryMap[currentLang]?.[activeCategory] || activeCategory;
@@ -143,6 +154,7 @@ function _page($$renderer, $$props) {
 			$$renderer$2.push(`<!----> `);
 			FilterBar($$renderer$2, {
 				categories: localizedCategories,
+				getAnchorFromCategory,
 				get activeCategory() {
 					return activeCategory;
 				},

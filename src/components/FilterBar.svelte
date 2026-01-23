@@ -2,7 +2,8 @@
   let { 
     activeCategory = $bindable('All'), 
     activeFilters = $bindable({}),
-    categories = []
+    categories = [],
+    getAnchorFromCategory = () => null
   } = $props();
 
   const secondaryFilters = [
@@ -12,6 +13,19 @@
 
   function setCategory(category) {
     activeCategory = category;
+    
+    // Update URL hash when category is selected
+    if (typeof window !== 'undefined') {
+      const anchor = getAnchorFromCategory(category);
+      if (anchor) {
+        window.location.hash = anchor;
+      } else {
+        // Remove hash if "All" is selected
+        if (window.location.hash) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      }
+    }
   }
 
   function toggleFilter(type, value) {
